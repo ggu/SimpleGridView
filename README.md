@@ -12,7 +12,7 @@ A grid view (the kind of symmetrical grid you'd use for a pathfinding applicatio
 
 # Simple demo
 ![Image of Demo1]
-(https://github.com/ggu/grid-view-/demo1.gif)
+(https://github.com/ggu/grid-view-/blob/master/demo1.gif)
 
 # To Do
 
