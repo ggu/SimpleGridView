@@ -11,6 +11,8 @@ A grid view (the kind of symmetrical grid you'd use for a pathfinding applicatio
 - Constants.swift houses some of the main values you might want to edit (like tile dimensions, tile margins, colors, possible tile states etc). One very important enum is Condition. You will pass in a Condition type into traverseGrid as well as a value that can be of any type and these together will allow you to use traverseGrid flexibly to do a variety of things (maybe you want to check if the tile has risk < 10 for your pathfinding, so you could create a Condition case for risk and then you could add another switch case within traverseGrid so that if your Condition is risk, you could pass in a value for risk and check the tile's risk against the unwrapped optional risk value passed into traverseGrid.
 
 # Simple demo
+The demo is not really representative of what this is meant to be used for, but it's there so you can see at a glance what this looks like with the default constants.
+
 ![Image of Demo1]
 (https://github.com/ggu/grid-view-/blob/master/demo1.gif)
 
