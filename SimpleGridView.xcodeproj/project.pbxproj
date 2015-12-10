@@ -38,17 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		767684791C06C85A00DB0483 /* Pathfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pathfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		767684791C06C85A00DB0483 /* SimpleGridView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleGridView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7676847C1C06C85A00DB0483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7676847E1C06C85A00DB0483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		767684811C06C85A00DB0483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		767684831C06C85A00DB0483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767684861C06C85A00DB0483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		767684881C06C85A00DB0483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7676848D1C06C85B00DB0483 /* PathfinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathfinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7676848D1C06C85B00DB0483 /* SimpleGridView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleGridView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		767684911C06C85B00DB0483 /* PathfinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfinderTests.swift; sourceTree = "<group>"; };
 		767684931C06C85B00DB0483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		767684981C06C85B00DB0483 /* PathfinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathfinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767684981C06C85B00DB0483 /* SimpleGridView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleGridView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7676849C1C06C85B00DB0483 /* PathfinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfinderUITests.swift; sourceTree = "<group>"; };
 		7676849E1C06C85B00DB0483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767684AA1C06CB2F00DB0483 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
@@ -95,9 +95,9 @@
 		7676847A1C06C85A00DB0483 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				767684791C06C85A00DB0483 /* Pathfinder.app */,
-				7676848D1C06C85B00DB0483 /* PathfinderTests.xctest */,
-				767684981C06C85B00DB0483 /* PathfinderUITests.xctest */,
+				767684791C06C85A00DB0483 /* SimpleGridView.app */,
+				7676848D1C06C85B00DB0483 /* SimpleGridView.xctest */,
+				767684981C06C85B00DB0483 /* SimpleGridView.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		767684781C06C85A00DB0483 /* Pathfinder */ = {
+		767684781C06C85A00DB0483 /* SimpleGridView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 767684A11C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "Pathfinder" */;
+			buildConfigurationList = 767684A11C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "SimpleGridView" */;
 			buildPhases = (
 				767684751C06C85A00DB0483 /* Sources */,
 				767684761C06C85A00DB0483 /* Frameworks */,
@@ -168,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = Pathfinder;
+			name = SimpleGridView;
 			productName = Pathfinder;
-			productReference = 767684791C06C85A00DB0483 /* Pathfinder.app */;
+			productReference = 767684791C06C85A00DB0483 /* SimpleGridView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7676848C1C06C85B00DB0483 /* PathfinderTests */ = {
+		7676848C1C06C85B00DB0483 /* SimpleGridViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 767684A41C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "PathfinderTests" */;
+			buildConfigurationList = 767684A41C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "SimpleGridViewTests" */;
 			buildPhases = (
 				767684891C06C85B00DB0483 /* Sources */,
 				7676848A1C06C85B00DB0483 /* Frameworks */,
@@ -186,14 +186,14 @@
 			dependencies = (
 				7676848F1C06C85B00DB0483 /* PBXTargetDependency */,
 			);
-			name = PathfinderTests;
+			name = SimpleGridViewTests;
 			productName = PathfinderTests;
-			productReference = 7676848D1C06C85B00DB0483 /* PathfinderTests.xctest */;
+			productReference = 7676848D1C06C85B00DB0483 /* SimpleGridView.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		767684971C06C85B00DB0483 /* PathfinderUITests */ = {
+		767684971C06C85B00DB0483 /* SimpleGridViewUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 767684A71C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "PathfinderUITests" */;
+			buildConfigurationList = 767684A71C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "SimpleGridViewUITests" */;
 			buildPhases = (
 				767684941C06C85B00DB0483 /* Sources */,
 				767684951C06C85B00DB0483 /* Frameworks */,
@@ -204,9 +204,9 @@
 			dependencies = (
 				7676849A1C06C85B00DB0483 /* PBXTargetDependency */,
 			);
-			name = PathfinderUITests;
+			name = SimpleGridViewUITests;
 			productName = PathfinderUITests;
-			productReference = 767684981C06C85B00DB0483 /* PathfinderUITests.xctest */;
+			productReference = 767684981C06C85B00DB0483 /* SimpleGridView.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 767684741C06C85A00DB0483 /* Build configuration list for PBXProject "Pathfinder" */;
+			buildConfigurationList = 767684741C06C85A00DB0483 /* Build configuration list for PBXProject "SimpleGridView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -245,9 +245,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				767684781C06C85A00DB0483 /* Pathfinder */,
-				7676848C1C06C85B00DB0483 /* PathfinderTests */,
-				767684971C06C85B00DB0483 /* PathfinderUITests */,
+				767684781C06C85A00DB0483 /* SimpleGridView */,
+				7676848C1C06C85B00DB0483 /* SimpleGridViewTests */,
+				767684971C06C85B00DB0483 /* SimpleGridViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,12 +314,12 @@
 /* Begin PBXTargetDependency section */
 		7676848F1C06C85B00DB0483 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 767684781C06C85A00DB0483 /* Pathfinder */;
+			target = 767684781C06C85A00DB0483 /* SimpleGridView */;
 			targetProxy = 7676848E1C06C85B00DB0483 /* PBXContainerItemProxy */;
 		};
 		7676849A1C06C85B00DB0483 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 767684781C06C85A00DB0483 /* Pathfinder */;
+			target = 767684781C06C85A00DB0483 /* SimpleGridView */;
 			targetProxy = 767684991C06C85B00DB0483 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,7 +434,7 @@
 				INFOPLIST_FILE = Pathfinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gabriel.Pathfinder;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SimpleGridView;
 			};
 			name = Debug;
 		};
@@ -445,7 +445,7 @@
 				INFOPLIST_FILE = Pathfinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gabriel.Pathfinder;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SimpleGridView;
 			};
 			name = Release;
 		};
@@ -456,8 +456,8 @@
 				INFOPLIST_FILE = PathfinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Five-Three.PathfinderTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pathfinder.app/Pathfinder";
+				PRODUCT_NAME = SimpleGridView;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleGridView.app/SimpleGridView";
 			};
 			name = Debug;
 		};
@@ -468,8 +468,8 @@
 				INFOPLIST_FILE = PathfinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Five-Three.PathfinderTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pathfinder.app/Pathfinder";
+				PRODUCT_NAME = SimpleGridView;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleGridView.app/SimpleGridView";
 			};
 			name = Release;
 		};
@@ -479,7 +479,7 @@
 				INFOPLIST_FILE = PathfinderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Five-Three.PathfinderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SimpleGridView;
 				TEST_TARGET_NAME = Pathfinder;
 				USES_XCTRUNNER = YES;
 			};
@@ -491,7 +491,7 @@
 				INFOPLIST_FILE = PathfinderUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Five-Three.PathfinderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SimpleGridView;
 				TEST_TARGET_NAME = Pathfinder;
 				USES_XCTRUNNER = YES;
 			};
@@ -500,7 +500,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		767684741C06C85A00DB0483 /* Build configuration list for PBXProject "Pathfinder" */ = {
+		767684741C06C85A00DB0483 /* Build configuration list for PBXProject "SimpleGridView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7676849F1C06C85B00DB0483 /* Debug */,
@@ -509,7 +509,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		767684A11C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "Pathfinder" */ = {
+		767684A11C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "SimpleGridView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				767684A21C06C85B00DB0483 /* Debug */,
@@ -518,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		767684A41C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "PathfinderTests" */ = {
+		767684A41C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "SimpleGridViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				767684A51C06C85B00DB0483 /* Debug */,
@@ -527,7 +527,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		767684A71C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "PathfinderUITests" */ = {
+		767684A71C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "SimpleGridViewUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				767684A81C06C85B00DB0483 /* Debug */,
