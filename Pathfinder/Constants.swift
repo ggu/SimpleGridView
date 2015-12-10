@@ -18,6 +18,10 @@ typealias GridSize = (width: Int, height: Int)
 // MARK: constants
 let TILE_WIDTH = 40
 let TILE_HEIGHT = TILE_WIDTH
+
+let TILE_COUNT_X = 20
+let TILE_COUNT_Y = 20
+
 let TILE_MARGIN = 1
 
 // MARK: struct

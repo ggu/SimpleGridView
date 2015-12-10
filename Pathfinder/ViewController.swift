@@ -26,12 +26,6 @@ class ViewController: UIViewController {
   {
     gridView = GridView(gridSize: view.frame.size)
     view.addSubview(gridView!)
-//    let button = UIButton(frame: CGRectMake(100, 100, 100, 100))
-//    button.titleLabel?.text = "RESET"
-//    button.layer.zPosition = 1000000
-//    view.addSubview(button)
   }
-
-
 }
 

@@ -524,6 +524,7 @@
 				767684A31C06C85B00DB0483 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		767684A41C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "PathfinderTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +533,7 @@
 				767684A61C06C85B00DB0483 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		767684A71C06C85B00DB0483 /* Build configuration list for PBXNativeTarget "PathfinderUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +542,7 @@
 				767684A91C06C85B00DB0483 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
