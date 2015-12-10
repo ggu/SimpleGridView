@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: UI: -
 
@@ -19,42 +20,35 @@ typealias GridSize = (width: Int, height: Int)
 let TILE_WIDTH = 40
 let TILE_HEIGHT = TILE_WIDTH
 
-let TILE_COUNT_X = 20
-let TILE_COUNT_Y = 20
-
 let TILE_MARGIN = 1
 
-// MARK: struct
-//struct GridSize
-//{
-//  let width : Int?
-//  let height : Int?
-//}
-
-// MARK: Logic: -
-
-// MARK: typealias
-typealias Matrix = [[Coordinate]]
-
-// MARK: enum
-enum Type
-{
-  case new
-  case obstacle
-  case start
-  case target
+// MARK: structs
+struct Color {
+  static let margin = UIColor.blackColor()
+  static let activeTile = UIColor.greenColor()
+  static let inactiveTile = UIColor.whiteColor()
 }
 
-// MARK: struct
+// MARK: - Logic: -
+
+// MARK: typealias
+
+// MARK: enums
+enum TileType
+{
+  case new
+  case active
+}
+
+enum Condition
+{
+  case location
+  case resetAll
+}
+
+// MARK: structs
 struct Coordinate
 {
   var x : Int
   var y : Int
 }
-
-struct MatrixSize
-{
-  let x : Int?
-  let y : Int?
-}
-

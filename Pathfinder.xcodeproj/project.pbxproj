@@ -17,8 +17,6 @@
 		767684AB1C06CB2F00DB0483 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684AA1C06CB2F00DB0483 /* TileView.swift */; };
 		767684AE1C06CB5C00DB0483 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684AD1C06CB5C00DB0483 /* Tile.swift */; };
 		767684B11C06CBD300DB0483 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684B01C06CBD300DB0483 /* Constants.swift */; };
-		767684B31C06CD8900DB0483 /* Pathfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684B21C06CD8900DB0483 /* Pathfinder.swift */; };
-		767684B51C06D05800DB0483 /* Heuristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684B41C06D05800DB0483 /* Heuristic.swift */; };
 		767684B71C06D07B00DB0483 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684B61C06D07B00DB0483 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +54,6 @@
 		767684AA1C06CB2F00DB0483 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		767684AD1C06CB5C00DB0483 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		767684B01C06CBD300DB0483 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		767684B21C06CD8900DB0483 /* Pathfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pathfinder.swift; sourceTree = "<group>"; };
-		767684B41C06D05800DB0483 /* Heuristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heuristic.swift; sourceTree = "<group>"; };
 		767684B61C06D07B00DB0483 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,8 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				767684AD1C06CB5C00DB0483 /* Tile.swift */,
-				767684B21C06CD8900DB0483 /* Pathfinder.swift */,
-				767684B41C06D05800DB0483 /* Heuristic.swift */,
 			);
 			name = logic;
 			sourceTree = "<group>";
@@ -295,8 +289,6 @@
 				767684B71C06D07B00DB0483 /* GridView.swift in Sources */,
 				767684AB1C06CB2F00DB0483 /* TileView.swift in Sources */,
 				7676847D1C06C85A00DB0483 /* AppDelegate.swift in Sources */,
-				767684B31C06CD8900DB0483 /* Pathfinder.swift in Sources */,
-				767684B51C06D05800DB0483 /* Heuristic.swift in Sources */,
 				767684AE1C06CB5C00DB0483 /* Tile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

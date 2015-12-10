@@ -9,12 +9,25 @@ import Foundation
 
 class Tile {
   
-  var type : Type?
-  var coordinate : Coordinate?
+  var type = TileType.new
   
-  init(tileType: Type, tileCoord: Coordinate?)
+  init()
+  {
+    
+  }
+  
+  init(tileType: TileType)
   {
     type = tileType
-    coordinate = tileCoord
+  }
+  
+  func setActive()
+  {
+    type = TileType.active
+  }
+  
+  func setInactive()
+  {
+    type = TileType.new
   }
 }

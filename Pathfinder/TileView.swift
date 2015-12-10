@@ -7,37 +7,30 @@
 
 import UIKit
 
-class TileView : UIView {
+class TileView : UIView
+{
   var tile : Tile?
-  
-  // functions for changing color/state and for handling touch
-  
-  
-  override init(frame: CGRect) {
-    super.init(frame: frame)
-    backgroundColor = UIColor.whiteColor()
-    //userInteractionEnabled = false
-    //multipleTouchEnabled = true
-    //exclusiveTouch = false
-  }
-
-  required init?(coder aDecoder: NSCoder) {
-      fatalError("init(coder:) has not been implemented")
-  }
-
-  func changePosition(x: Int, y: Int)
+    
+  override init(frame: CGRect)
   {
-    frame.origin.x = CGFloat(x)
-    frame.origin.y = CGFloat(y)
+    super.init(frame: frame)
+    backgroundColor = Color.inactiveTile
+    tile = Tile()
   }
   
   func setActive()
   {
-    backgroundColor = UIColor.greenColor()
+    backgroundColor = Color.activeTile
+    tile?.setActive()
   }
   
   func reset()
   {
-    backgroundColor = UIColor.whiteColor()
+    backgroundColor = Color.inactiveTile
+    tile?.setInactive()
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
   }
 }
