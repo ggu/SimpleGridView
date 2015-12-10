@@ -142,7 +142,7 @@
 				767684AA1C06CB2F00DB0483 /* TileView.swift */,
 				767684B61C06D07B00DB0483 /* GridView.swift */,
 			);
-			name = views;
+			path = views;
 			sourceTree = "<group>";
 		};
 		767684AF1C06CB6100DB0483 /* logic */ = {
@@ -150,7 +150,7 @@
 			children = (
 				767684AD1C06CB5C00DB0483 /* Tile.swift */,
 			);
-			name = logic;
+			path = logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +217,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = "Five Three";
+				ORGANIZATIONNAME = Gabriel;
 				TargetAttributes = {
 					767684781C06C85A00DB0483 = {
 						CreatedOnToolsVersion = 7.1.1;
