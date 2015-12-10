@@ -12,8 +12,8 @@
 		767684821C06C85A00DB0483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767684801C06C85A00DB0483 /* Main.storyboard */; };
 		767684841C06C85A00DB0483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767684831C06C85A00DB0483 /* Assets.xcassets */; };
 		767684871C06C85A00DB0483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767684851C06C85A00DB0483 /* LaunchScreen.storyboard */; };
-		767684921C06C85B00DB0483 /* PathfinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684911C06C85B00DB0483 /* PathfinderTests.swift */; };
-		7676849D1C06C85B00DB0483 /* PathfinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676849C1C06C85B00DB0483 /* PathfinderUITests.swift */; };
+		767684921C06C85B00DB0483 /* SimpleGridViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684911C06C85B00DB0483 /* SimpleGridViewTests.swift */; };
+		7676849D1C06C85B00DB0483 /* SimpleGridViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676849C1C06C85B00DB0483 /* SimpleGridViewUITests.swift */; };
 		767684AB1C06CB2F00DB0483 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684AA1C06CB2F00DB0483 /* TileView.swift */; };
 		767684AE1C06CB5C00DB0483 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684AD1C06CB5C00DB0483 /* Tile.swift */; };
 		767684B11C06CBD300DB0483 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684B01C06CBD300DB0483 /* Constants.swift */; };
@@ -46,10 +46,10 @@
 		767684861C06C85A00DB0483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		767684881C06C85A00DB0483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7676848D1C06C85B00DB0483 /* SimpleGridView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleGridView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		767684911C06C85B00DB0483 /* PathfinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfinderTests.swift; sourceTree = "<group>"; };
+		767684911C06C85B00DB0483 /* SimpleGridViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGridViewTests.swift; sourceTree = "<group>"; };
 		767684931C06C85B00DB0483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767684981C06C85B00DB0483 /* SimpleGridView.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleGridView.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7676849C1C06C85B00DB0483 /* PathfinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfinderUITests.swift; sourceTree = "<group>"; };
+		7676849C1C06C85B00DB0483 /* SimpleGridViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGridViewUITests.swift; sourceTree = "<group>"; };
 		7676849E1C06C85B00DB0483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767684AA1C06CB2F00DB0483 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		767684AD1C06CB5C00DB0483 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
@@ -85,9 +85,9 @@
 		767684701C06C85A00DB0483 = {
 			isa = PBXGroup;
 			children = (
-				7676847B1C06C85A00DB0483 /* Pathfinder */,
-				767684901C06C85B00DB0483 /* PathfinderTests */,
-				7676849B1C06C85B00DB0483 /* PathfinderUITests */,
+				7676847B1C06C85A00DB0483 /* SimpleGridView */,
+				767684901C06C85B00DB0483 /* SimpleGridViewTests */,
+				7676849B1C06C85B00DB0483 /* SimpleGridViewUITests */,
 				7676847A1C06C85A00DB0483 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,7 +102,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7676847B1C06C85A00DB0483 /* Pathfinder */ = {
+		7676847B1C06C85A00DB0483 /* SimpleGridView */ = {
 			isa = PBXGroup;
 			children = (
 				7676847C1C06C85A00DB0483 /* AppDelegate.swift */,
@@ -115,25 +115,25 @@
 				767684851C06C85A00DB0483 /* LaunchScreen.storyboard */,
 				767684881C06C85A00DB0483 /* Info.plist */,
 			);
-			path = Pathfinder;
+			path = SimpleGridView;
 			sourceTree = "<group>";
 		};
-		767684901C06C85B00DB0483 /* PathfinderTests */ = {
+		767684901C06C85B00DB0483 /* SimpleGridViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				767684911C06C85B00DB0483 /* PathfinderTests.swift */,
+				767684911C06C85B00DB0483 /* SimpleGridViewTests.swift */,
 				767684931C06C85B00DB0483 /* Info.plist */,
 			);
-			path = PathfinderTests;
+			path = SimpleGridViewTests;
 			sourceTree = "<group>";
 		};
-		7676849B1C06C85B00DB0483 /* PathfinderUITests */ = {
+		7676849B1C06C85B00DB0483 /* SimpleGridViewUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7676849C1C06C85B00DB0483 /* PathfinderUITests.swift */,
+				7676849C1C06C85B00DB0483 /* SimpleGridViewUITests.swift */,
 				7676849E1C06C85B00DB0483 /* Info.plist */,
 			);
-			path = PathfinderUITests;
+			path = SimpleGridViewUITests;
 			sourceTree = "<group>";
 		};
 		767684AC1C06CB5100DB0483 /* views */ = {
@@ -297,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				767684921C06C85B00DB0483 /* PathfinderTests.swift in Sources */,
+				767684921C06C85B00DB0483 /* SimpleGridViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7676849D1C06C85B00DB0483 /* PathfinderUITests.swift in Sources */,
+				7676849D1C06C85B00DB0483 /* SimpleGridViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,9 +431,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Pathfinder/Info.plist;
+				INFOPLIST_FILE = SimpleGridView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gabriel.Pathfinder;
+				PRODUCT_BUNDLE_IDENTIFIER = gabriel.SimpleGridView;
 				PRODUCT_NAME = SimpleGridView;
 			};
 			name = Debug;
@@ -442,9 +442,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Pathfinder/Info.plist;
+				INFOPLIST_FILE = SimpleGridView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gabriel.Pathfinder;
+				PRODUCT_BUNDLE_IDENTIFIER = gabriel.SimpleGridView;
 				PRODUCT_NAME = SimpleGridView;
 			};
 			name = Release;
@@ -453,9 +453,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = PathfinderTests/Info.plist;
+				INFOPLIST_FILE = SimpleGridViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Five-Three.PathfinderTests";
+				PRODUCT_BUNDLE_IDENTIFIER = gabriel.SimpleGridViewTests;
 				PRODUCT_NAME = SimpleGridView;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleGridView.app/SimpleGridView";
 			};
@@ -465,9 +465,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = PathfinderTests/Info.plist;
+				INFOPLIST_FILE = SimpleGridViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Five-Three.PathfinderTests";
+				PRODUCT_BUNDLE_IDENTIFIER = gabriel.SimpleGridViewTests;
 				PRODUCT_NAME = SimpleGridView;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleGridView.app/SimpleGridView";
 			};
@@ -476,9 +476,9 @@
 		767684A81C06C85B00DB0483 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = PathfinderUITests/Info.plist;
+				INFOPLIST_FILE = SimpleGridViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Five-Three.PathfinderUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = gabriel.SimpleGridViewUITests;
 				PRODUCT_NAME = SimpleGridView;
 				TEST_TARGET_NAME = Pathfinder;
 				USES_XCTRUNNER = YES;
@@ -488,9 +488,9 @@
 		767684A91C06C85B00DB0483 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = PathfinderUITests/Info.plist;
+				INFOPLIST_FILE = SimpleGridViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Five-Three.PathfinderUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = gabriel.SimpleGridViewUITests;
 				PRODUCT_NAME = SimpleGridView;
 				TEST_TARGET_NAME = Pathfinder;
 				USES_XCTRUNNER = YES;

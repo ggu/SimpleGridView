@@ -8,7 +8,7 @@
 
 import XCTest
 
-class PathfinderUITests: XCTestCase {
+class SimpleGridViewUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

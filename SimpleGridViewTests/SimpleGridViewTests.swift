@@ -9,7 +9,7 @@
 import XCTest
 @testable import Pathfinder
 
-class PathfinderTests: XCTestCase {
+class SimpleGridViewTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
