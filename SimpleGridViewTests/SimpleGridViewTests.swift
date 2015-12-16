@@ -1,9 +1,8 @@
 //
-//  PathfinderTests.swift
-//  PathfinderTests
+//  SimpleGridViewTests.swift
+//  SimpleGridViewTests
 //
 //  Created by Gabriel Uribe on 11/25/15.
-//  Copyright © 2015 Five Three. All rights reserved.
 //
 
 import XCTest

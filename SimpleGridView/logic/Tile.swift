@@ -1,6 +1,6 @@
 //
 //  Tile.swift
-//  Pathfinder
+//  SimpleGridView
 //
 //  Created by Gabriel Uribe on 11/25/15.
 //
