@@ -7,26 +7,16 @@
 
 import Foundation
 
-class Tile {
-  
+struct Tile
+{
   var type = TileType.new
   
-  init()
-  {
-    
-  }
-  
-  init(tileType: TileType)
-  {
-    type = tileType
-  }
-  
-  func setActive()
+  mutating func setActive()
   {
     type = TileType.active
   }
   
-  func setInactive()
+  mutating func setInactive()
   {
     type = TileType.new
   }
