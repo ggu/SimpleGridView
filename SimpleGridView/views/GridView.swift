@@ -57,7 +57,7 @@ class GridView : UIView
     }
   }
   
-  func traverseGrid(state: TileType, condition: Condition, value: Any?)
+  func traverseGrid(state: Tile.Category, condition: Condition, value: Any?)
   {
     for x in grid
     {
@@ -83,14 +83,14 @@ class GridView : UIView
   }
   
   // MARK: - Tile state methods
-  func toggleTileState(tile: TileView, state: TileType)
+  func toggleTileState(tile: TileView, state: Tile.Category)
   {
     switch state
     {
-    case TileType.new:
+    case .new:
       tile.reset()
       break
-    case TileType.active:
+    case .active:
       tile.setActive()
       break
     }
@@ -102,7 +102,7 @@ class GridView : UIView
     let shouldReset = event?.allTouches()!.count > 1
     if shouldReset
     {
-      traverseGrid(TileType.new, condition: Condition.resetAll, value: nil)
+      traverseGrid(Tile.Category.new, condition: Condition.resetAll, value: nil)
     } else
     {
       for touch in touches
@@ -110,7 +110,7 @@ class GridView : UIView
         if touch.view!.isKindOfClass(TileView)
         {
           let tile = touch.view as! TileView
-          toggleTileState(tile, state: TileType.active)
+          toggleTileState(tile, state: Tile.Category.active)
         }
       }
     }
@@ -121,7 +121,7 @@ class GridView : UIView
     for touch in touches
     {
       let location = touch.locationInView(self)
-      traverseGrid(TileType.active, condition: Condition.location, value: location)
+      traverseGrid(Tile.Category.active, condition: Condition.location, value: location)
     }
   }
   

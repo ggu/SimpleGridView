@@ -9,15 +9,21 @@ import Foundation
 
 struct Tile
 {
-  var type = TileType.new
+  enum Category
+  {
+    case new
+    case active
+  }
+  
+  var types = Category.new
   
   mutating func setActive()
   {
-    type = TileType.active
+    types = Category.active
   }
   
   mutating func setInactive()
   {
-    type = TileType.new
+    types = Category.new
   }
 }

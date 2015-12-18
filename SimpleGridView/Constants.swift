@@ -22,7 +22,7 @@ let TILE_HEIGHT = TILE_WIDTH
 let TILE_MARGIN = 1
 
 // MARK: structs
-struct Color {
+enum Color {
   static let margin = UIColor.blackColor()
   static let activeTile = UIColor.greenColor()
   static let inactiveTile = UIColor.whiteColor()
@@ -33,11 +33,6 @@ struct Color {
 // MARK: typealias
 
 // MARK: enums
-enum TileType
-{
-  case new
-  case active
-}
 
 enum Condition
 {
