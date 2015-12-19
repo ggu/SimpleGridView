@@ -22,7 +22,7 @@ struct Tile
     types = Category.active
   }
   
-  mutating func setInactive()
+  mutating func reset()
   {
     types = Category.new
   }

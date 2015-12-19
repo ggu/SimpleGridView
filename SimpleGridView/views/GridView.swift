@@ -10,28 +10,28 @@ import UIKit
 class GridView : UIView
 {
   // MARK: - Fields
-  var grid : Grid = []
-  var size : GridSize
+  private var grid : Grid = []
+  private var size : GridSize
   // MARK: -
   
-  init(gridSize: CGSize)
+  init(size: CGSize)
   {
-    size = (Int(gridSize.width), Int(gridSize.height))
-    let frame = CGRectMake(0, 0, gridSize.width, gridSize.height)
+    self.size = (Int(size.width), Int(size.height))
+    let frame = CGRectMake(0, 0, size.width, size.height)
     
     super.init(frame: frame)
     
     setup()
   }
   
-  func setup()
+  private func setup()
   {
     backgroundColor = Color.margin
     createGrid()
   }
   
   // MARK: - Grid Methods
-  func createGrid()
+  private func createGrid()
   {
     var xPos = 0
     var yPos = 0
@@ -57,7 +57,7 @@ class GridView : UIView
     }
   }
   
-  func traverseGrid(state: Tile.Category, condition: Condition, value: Any?)
+  private func traverseGrid(state: Tile.Category, condition: Condition, value: Any?)
   {
     for x in grid
     {
@@ -83,7 +83,7 @@ class GridView : UIView
   }
   
   // MARK: - Tile state methods
-  func toggleTileState(tile: TileView, state: Tile.Category)
+  private func toggleTileState(tile: TileView, state: Tile.Category)
   {
     switch state
     {

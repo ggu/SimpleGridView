@@ -11,17 +11,14 @@ import UIKit
 // MARK: UI: -
 
 // MARK: typealias
+
 typealias Grid = [[TileView]]
 typealias GridSize = (width: Int, height: Int)
 
+// MARK: constant
 
-// MARK: constants
-let TILE_WIDTH = 40
-let TILE_HEIGHT = TILE_WIDTH
+// MARK: enum
 
-let TILE_MARGIN = 1
-
-// MARK: structs
 enum Color {
   static let margin = UIColor.blackColor()
   static let activeTile = UIColor.greenColor()
@@ -32,17 +29,12 @@ enum Color {
 
 // MARK: typealias
 
-// MARK: enums
+// MARK: constant
+
+// MARK: enum
 
 enum Condition
 {
   case location
   case resetAll
-}
-
-// MARK: structs
-struct Coordinate
-{
-  var x : Int
-  var y : Int
 }

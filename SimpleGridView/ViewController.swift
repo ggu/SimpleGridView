@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  var gridView : GridView?
+  private var gridView : GridView?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  func setup()
+  private func setup()
   {
-    gridView = GridView(gridSize: view.frame.size)
+    gridView = GridView(size: view.frame.size)
     view.addSubview(gridView!)
   }
 }
