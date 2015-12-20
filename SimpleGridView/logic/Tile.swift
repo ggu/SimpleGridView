@@ -15,15 +15,15 @@ struct Tile
     case active
   }
   
-  var types = Category.new
+  var type = Category.new
   
   mutating func setActive()
   {
-    types = Category.active
+    type = Category.active
   }
   
   mutating func reset()
   {
-    types = Category.new
+    type = Category.new
   }
 }

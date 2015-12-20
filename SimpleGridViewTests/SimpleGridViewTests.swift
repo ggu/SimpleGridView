@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import Pathfinder
 
 class SimpleGridViewTests: XCTestCase {
     

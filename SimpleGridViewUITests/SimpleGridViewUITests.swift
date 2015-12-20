@@ -7,6 +7,8 @@
 
 import XCTest
 
+@testable import SimpleGridView
+
 class SimpleGridViewUITests: XCTestCase {
         
     override func setUp() {
@@ -27,9 +29,17 @@ class SimpleGridViewUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTouches() {
+
+      
+      let element = XCUIApplication().childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).element.childrenMatchingType(.Other).elementBoundByIndex(1)
+      
+      let tile1 = element.childrenMatchingType(.Other).elementBoundByIndex(8)
+      let tile2 = element.childrenMatchingType(.Other).elementBoundByIndex(76)
+      let tile3 = element.childrenMatchingType(.Other).elementBoundByIndex(38)
+      
+      tile1.tap()
+      tile2.tap()
+      tile3.tap()
     }
-    
 }

@@ -484,7 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gabriel.SimpleGridViewUITests;
 				PRODUCT_NAME = SimpleGridView;
-				TEST_TARGET_NAME = Pathfinder;
+				TEST_TARGET_NAME = SimpleGridView;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -496,7 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gabriel.SimpleGridViewUITests;
 				PRODUCT_NAME = SimpleGridView;
-				TEST_TARGET_NAME = Pathfinder;
+				TEST_TARGET_NAME = SimpleGridView;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
