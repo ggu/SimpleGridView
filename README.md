@@ -18,6 +18,8 @@ The demo is not really representative of what this is meant to be used for, but 
 
 # To Do
 
+- add a static function to Coordinate.swift that calculates the distance between two coords on the grid
+
 - support for panning around a grid larger than the screen 
 
 - make a version to work specifically with Sprite Kit for non-UIKit games (like a top-down strategy game or role-playing game that would need a layer like this)
