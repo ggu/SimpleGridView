@@ -14,7 +14,7 @@ A grid view (the kind of symmetrical grid you'd use for a pathfinding applicatio
 Wherever you need a grid:
 ```
 let gridView = GridView(size: gridSize)
-view.addSubview(gridView!)
+view.addSubview(gridView)
 ```
 
 # Simple demo
