@@ -65,12 +65,12 @@ class GridView : UIView
       {
         switch condition
         {
-        case Condition.setAll:
+        case .setAll:
           toggleTileState(tile, state: state)
-        case Condition.location:
+        case .location:
           if let point = value as! CGPoint?
           {
-            if (tile.frame.contains(point))
+            if tile.frame.contains(point)
             {
               toggleTileState(tile, state: state)
             }
@@ -87,10 +87,8 @@ class GridView : UIView
     {
     case .new:
       tile.reset()
-      break
     case .active:
       tile.setActive()
-      break
     }
   }
   

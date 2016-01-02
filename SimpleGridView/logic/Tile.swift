@@ -19,11 +19,11 @@ struct Tile
   
   mutating func setActive()
   {
-    state = State.active
+    state = .active
   }
   
   mutating func reset()
   {
-    state = State.new
+    state = .new
   }
 }

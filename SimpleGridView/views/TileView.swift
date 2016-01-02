@@ -13,25 +13,25 @@ var TILE_MARGIN = 1
 
 class TileView : UIView
 {
-  private var tile : Tile?
+  private var tile : Tile
     
   override init(frame: CGRect)
   {
+    tile = Tile()
     super.init(frame: frame)
     backgroundColor = Color.inactiveTile
-    tile = Tile()
   }
   
   func setActive()
   {
     backgroundColor = Color.activeTile
-    tile?.setActive()
+    tile.setActive()
   }
   
   func reset()
   {
     backgroundColor = Color.inactiveTile
-    tile?.reset()
+    tile.reset()
   }
   
   static func changeTileWidth(width: Int)
