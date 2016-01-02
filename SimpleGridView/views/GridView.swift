@@ -65,7 +65,7 @@ class GridView : UIView
       {
         switch condition
         {
-        case Condition.resetAll:
+        case Condition.setAll:
           toggleTileState(tile, state: state)
           break
         case Condition.location:
@@ -102,7 +102,7 @@ class GridView : UIView
     let shouldReset = event?.allTouches()!.count > 1
     if shouldReset
     {
-      traverseGrid(Tile.State.new, condition: Condition.resetAll, value: nil)
+      traverseGrid(Tile.State.new, condition: Condition.setAll, value: nil)
     } else
     {
       for touch in touches

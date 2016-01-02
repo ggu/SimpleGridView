@@ -36,5 +36,5 @@ enum Color {
 enum Condition
 {
   case location
-  case resetAll
+  case setAll
 }
