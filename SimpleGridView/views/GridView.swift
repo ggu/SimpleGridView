@@ -67,7 +67,6 @@ class GridView : UIView
         {
         case Condition.setAll:
           toggleTileState(tile, state: state)
-          break
         case Condition.location:
           if let point = value as! CGPoint?
           {
@@ -76,7 +75,6 @@ class GridView : UIView
               toggleTileState(tile, state: state)
             }
           }
-          break
         }
       }
     }
