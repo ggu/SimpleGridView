@@ -13,7 +13,7 @@ var TILE_MARGIN = 1
 
 class TileView : UIView
 {
-  private var tile : Tile
+  private var tile : Tile  
     
   override init(frame: CGRect)
   {
@@ -32,6 +32,11 @@ class TileView : UIView
   {
     backgroundColor = Color.inactiveTile
     tile.reset()
+  }
+  
+  func containsPoint(point: CGPoint) -> Bool
+  {
+    return frame.contains(point)
   }
   
   static func changeTileWidth(width: Int)

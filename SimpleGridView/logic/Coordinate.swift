@@ -9,8 +9,8 @@ import Foundation
 
 struct Coordinate
 {
-  var x : Int
-  var y : Int
+  var x: Int
+  var y: Int
   
   // Manhattan distance
   func mDistance(coordinate: Coordinate) -> Int

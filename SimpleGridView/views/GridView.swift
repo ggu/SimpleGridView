@@ -10,8 +10,8 @@ import UIKit
 class GridView : UIView
 {
   // MARK: - Fields
-  private var grid : Grid = []
-  private var size : GridSize
+  private var grid: Grid = []
+  private var size: GridSize
   // MARK: -
   
   init(size: CGSize)
@@ -70,10 +70,7 @@ class GridView : UIView
         case .location:
           if let point = value as! CGPoint?
           {
-            if tile.frame.contains(point)
-            {
-              toggleTileState(tile, state: state)
-            }
+            setTileIfPoint(tile, point: point, state: state)
           }
         }
       }
@@ -95,19 +92,14 @@ class GridView : UIView
   // MARK: - Touches methods
   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
   {
-    let shouldReset = event?.allTouches()!.count > 1
-    if shouldReset
+    if shouldResetGrid((event?.allTouches()?.count)!)
     {
       traverseGrid(Tile.State.new, condition: Condition.setAll, value: nil)
     } else
     {
       for touch in touches
       {
-        if touch.view!.isKindOfClass(TileView)
-        {
-          let tile = touch.view as! TileView
-          toggleTileState(tile, state: Tile.State.active)
-        }
+        setViewIfTile(touch.view!, state: Tile.State.new)
       }
     }
   }
@@ -131,7 +123,37 @@ class GridView : UIView
     
   }
   
-  required init?(coder aDecoder: NSCoder) {
+  // MARK: Helper methods
+  
+  func setTileIfPoint(tile: TileView, point: CGPoint, state: Tile.State)
+  {
+    if tile.containsPoint(point)
+    {
+      toggleTileState(tile, state: state)
+    }
+  }
+  
+  func setViewIfTile(view: UIView, state: Tile.State)
+  {
+    if isTileView(view)
+    {
+      let tile = view as! TileView
+      toggleTileState(tile, state: state)
+    }
+  }
+  
+  func shouldResetGrid(count: Int) -> Bool
+  {
+    return count > 1
+  }
+  
+  func isTileView(view: UIView) -> Bool
+  {
+    return view.isKindOfClass(TileView)
+  }
+  
+  required init?(coder aDecoder: NSCoder)
+  {
     fatalError("init(coder:) has not been implemented")
   }
 }
