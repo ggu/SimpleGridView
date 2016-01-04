@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GridView : UIView
+public class GridView : UIView
 {
   // MARK: - Fields
   private var grid: Grid = []
@@ -90,7 +90,7 @@ class GridView : UIView
   }
   
   // MARK: - Touches methods
-  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
+  override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
   {
     if shouldResetGrid((event?.allTouches()?.count)!)
     {
@@ -104,7 +104,7 @@ class GridView : UIView
     }
   }
   
-  override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?)
+  override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?)
   {
     for touch in touches
     {
@@ -113,12 +113,12 @@ class GridView : UIView
     }
   }
   
-  override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?)
+  override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?)
   {
     
   }
   
-  override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?)
+  override public func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?)
   {
     
   }
@@ -152,8 +152,9 @@ class GridView : UIView
     return view.isKindOfClass(TileView)
   }
   
-  required init?(coder aDecoder: NSCoder)
+  required public init?(coder aDecoder: NSCoder)
   {
     fatalError("init(coder:) has not been implemented")
   }
+  
 }

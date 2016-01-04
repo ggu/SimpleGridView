@@ -11,7 +11,7 @@ var TILE_WIDTH = 40
 var TILE_HEIGHT = 40
 var TILE_MARGIN = 1
 
-class TileView : UIView
+internal class TileView : UIView
 {
   private var tile : Tile  
     

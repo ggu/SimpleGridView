@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Tile
+internal struct Tile
 {
   enum State
   {

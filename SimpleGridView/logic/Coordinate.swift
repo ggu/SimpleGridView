@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Coordinate
+internal struct Coordinate
 {
   var x: Int
   var y: Int

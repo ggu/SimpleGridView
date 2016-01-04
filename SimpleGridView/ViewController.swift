@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+internal class ViewController: UIViewController {
 
   private var gridView : GridView?
   
@@ -27,5 +27,5 @@ class ViewController: UIViewController {
     gridView = GridView(size: view.frame.size)
     view.addSubview(gridView!)
   }
+  
 }
-
