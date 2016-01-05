@@ -11,6 +11,8 @@ A grid view (the kind of symmetrical grid you'd use for a pathfinding applicatio
 - Constants.swift houses some of the main values you might want to edit (colors, possible tile states). One very important enum is Condition. You will pass in a Condition type into traverseGrid as well as a value that can be of any type and these together will allow you to use traverseGrid flexibly to do a variety of things (maybe you want to check if the tile has risk < 10 for your pathfinding, so you could create a Condition case for risk and then you could add another switch case within traverseGrid so that if your Condition is risk, you could pass in a value for risk and check the tile's risk against the unwrapped optional risk value passed into traverseGrid).
 
 # Usage 
+Drag and drop GridView.swift, TileView.swift, Coordinate.swift, Constants.swift and Tile.swift into your project. Alternatively, you can add this as a git submodule.
+
 Wherever you need a grid:
 ```
 let gridView = GridView(size: gridSize)
