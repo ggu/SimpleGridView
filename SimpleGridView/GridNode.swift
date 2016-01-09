@@ -9,5 +9,23 @@ import SpriteKit
 
 public class GridNode: SKSpriteNode
 {
+  // MARK: - Fields
+  private var grid: SKGrid = []
+  // MARK: -
   
+  init(size: CGSize)
+  {
+    super.init(texture: nil, color: Color.margin, size: size)
+    
+    setup()
+  }
+  
+  private func setup()
+  {
+    //createGrid()
+  }
+  
+  required public init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
 }

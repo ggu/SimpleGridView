@@ -13,6 +13,7 @@ import UIKit
 // MARK: typealias
 
 typealias Grid = [[TileView]]
+typealias SKGrid = [[TileNode]]
 typealias GridSize = (width: Int, height: Int)
 
 // MARK: constant
