@@ -94,7 +94,7 @@
 				7633E3671C416D3D00EC3FD5 /* GridNode.swift */,
 				7633E3691C416DB100EC3FD5 /* TileNode.swift */,
 			);
-			name = nodes;
+			path = nodes;
 			sourceTree = "<group>";
 		};
 		7633E36B1C416E4700EC3FD5 /* shared */ = {
