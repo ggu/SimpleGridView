@@ -19,6 +19,7 @@ internal class TileNode: SKSpriteNode
   {
     tile = Tile()
     super.init(texture: nil, color: Color.inactiveTile, size: size)
+    self.anchorPoint = CGPointZero
     self.position = position
   }
   

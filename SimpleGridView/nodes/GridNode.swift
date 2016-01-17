@@ -17,13 +17,13 @@ public class GridNode: SKSpriteNode
   init(size: CGSize)
   {
     super.init(texture: nil, color: Color.margin, size: size)
-    
+    self.userInteractionEnabled = true
     setup()
   }
   
   private func setup()
   {
-    //createGrid()
+    createGrid()
   }
   
   // MARK: - Grid Methods

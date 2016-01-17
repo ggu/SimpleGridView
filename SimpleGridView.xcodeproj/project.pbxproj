@@ -21,6 +21,9 @@
 		767684AE1C06CB5C00DB0483 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684AD1C06CB5C00DB0483 /* Tile.swift */; };
 		767684B11C06CBD300DB0483 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684B01C06CBD300DB0483 /* Constants.swift */; };
 		767684B71C06D07B00DB0483 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767684B61C06D07B00DB0483 /* GridView.swift */; };
+		76B3C9AF1C4C4AFB00D225A5 /* SKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B3C9AE1C4C4AFB00D225A5 /* SKViewController.swift */; };
+		76B3C9B11C4C4B6A00D225A5 /* GridScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B3C9B01C4C4B6A00D225A5 /* GridScene.swift */; };
+		76B3C9B41C4C4D1400D225A5 /* SKMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B3C9B21C4C4D1400D225A5 /* SKMain.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		767684AD1C06CB5C00DB0483 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		767684B01C06CBD300DB0483 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		767684B61C06D07B00DB0483 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		76B3C9AE1C4C4AFB00D225A5 /* SKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKViewController.swift; sourceTree = "<group>"; };
+		76B3C9B01C4C4B6A00D225A5 /* GridScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridScene.swift; sourceTree = "<group>"; };
+		76B3C9B31C4C4D1400D225A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SKMain.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,12 +136,15 @@
 			children = (
 				7676847C1C06C85A00DB0483 /* AppDelegate.swift */,
 				7676847E1C06C85A00DB0483 /* ViewController.swift */,
+				76B3C9AE1C4C4AFB00D225A5 /* SKViewController.swift */,
+				76B3C9B01C4C4B6A00D225A5 /* GridScene.swift */,
 				7633E3661C416D2900EC3FD5 /* nodes */,
 				767684AC1C06CB5100DB0483 /* views */,
 				7633E36B1C416E4700EC3FD5 /* shared */,
 				767684AF1C06CB6100DB0483 /* logic */,
 				767684B01C06CBD300DB0483 /* Constants.swift */,
 				767684801C06C85A00DB0483 /* Main.storyboard */,
+				76B3C9B21C4C4D1400D225A5 /* SKMain.storyboard */,
 				767684831C06C85A00DB0483 /* Assets.xcassets */,
 				767684851C06C85A00DB0483 /* LaunchScreen.storyboard */,
 				767684881C06C85A00DB0483 /* Info.plist */,
@@ -287,6 +296,7 @@
 				767684871C06C85A00DB0483 /* LaunchScreen.storyboard in Resources */,
 				767684841C06C85A00DB0483 /* Assets.xcassets in Resources */,
 				767684821C06C85A00DB0483 /* Main.storyboard in Resources */,
+				76B3C9B41C4C4D1400D225A5 /* SKMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +327,8 @@
 				7633E3681C416D3D00EC3FD5 /* GridNode.swift in Sources */,
 				767684B71C06D07B00DB0483 /* GridView.swift in Sources */,
 				767684AB1C06CB2F00DB0483 /* TileView.swift in Sources */,
+				76B3C9B11C4C4B6A00D225A5 /* GridScene.swift in Sources */,
+				76B3C9AF1C4C4AFB00D225A5 /* SKViewController.swift in Sources */,
 				7676847D1C06C85A00DB0483 /* AppDelegate.swift in Sources */,
 				7633E36A1C416DB100EC3FD5 /* TileNode.swift in Sources */,
 				767684AE1C06CB5C00DB0483 /* Tile.swift in Sources */,
@@ -369,6 +381,14 @@
 				767684861C06C85A00DB0483 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		76B3C9B21C4C4D1400D225A5 /* SKMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76B3C9B31C4C4D1400D225A5 /* Base */,
+			);
+			name = SKMain.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
