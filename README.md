@@ -1,5 +1,5 @@
 # Simple Grid View
-A grid view (the kind of symmetrical grid you'd use for a pathfinding application or a game of some sort) based around UIKit. I am currently working on a visual pathfinder in Swift with this as a base, separate from any sort of pathfinding AI.
+A grid view (the kind of symmetrical grid you'd use for a pathfinding application or a game of some sort) based around UIKit and SpriteKit. I am currently working on a visual pathfinder in Swift with this as a base, separate from any sort of pathfinding AI.
 
 # The Code
 - TileView is a UIView subclass that stores a Tile and handles active and inactive state changes (the defaults I have set for this app, but you might have various states like inactive, target, obstacle, start etc..). The tile width, height, and margins are also managed here.
@@ -11,9 +11,10 @@ A grid view (the kind of symmetrical grid you'd use for a pathfinding applicatio
 - Constants.swift houses some of the main values you might want to edit (colors, possible tile states). One very important enum is Condition. You will pass in a Condition type into traverseGrid as well as a value that can be of any type and these together will allow you to use traverseGrid flexibly to do a variety of things (maybe you want to check if the tile has risk < 10 for your pathfinding, so you could create a Condition case for risk and then you could add another switch case within traverseGrid so that if your Condition is risk, you could pass in a value for risk and check the tile's risk against the unwrapped optional risk value passed into traverseGrid).
 
 # Usage 
-Drag and drop GridView.swift, TileView.swift, Coordinate.swift, Constants.swift and Tile.swift into your project. 
+Drag and drop GridView.swift, TileView.swift, Coordinate.swift, Constants.swift and Tile.swift into your project OR
+add as a submodule (see: https://github.com/ggu/Pathfinder).
 
-Wherever you need a grid:
+And then wherever you need a grid (UIKit):
 ```
 let gridView = GridView(size: gridSize)
 view.addSubview(gridView)
@@ -29,4 +30,4 @@ The demo is not really representative of what this is meant to be used for, but 
 
 - support for panning around a grid larger than the screen 
 
-- make a version with SpriteKit instead of UIKit (for apps that need to represent the world with SKNodes instead of UIViews)
+- complete support for SpriteKit
