@@ -1,23 +1,40 @@
 # Simple Grid View
-A grid view (the kind of symmetrical grid you'd use for a pathfinding application or a game of some sort) based around UIKit and SpriteKit. I am currently working on a visual pathfinder in Swift with this as a base, separate from any sort of pathfinding AI.
+A grid view (the kind of symmetrical grid you'd use for a pathfinding application or a game of some sort) based around UIKit and SpriteKit. I am currently working on a visual pathfinder (https://github.com/ggu/Pathfinder) in Swift with this as a base, separate from any sort of pathfinding AI.
 
 # The Code
 - TileView is a UIView subclass that stores a Tile and handles active and inactive state changes (the defaults I have set for this app, but you might have various states like inactive, target, obstacle, start etc..). The tile width, height, and margins are also managed here.
 
 - GridView is another UIView subclass that handles a 2D list of TileView and manages the touches. Touches are currently handled here (e.g. you tap or swipe over TileViews and modify their state). I am not sure if I would be able to handle the touches in TileView, which would be ideal but touchesmoved is currently stopping me from doing that as touchesmoved holds onto the original view, and would not be called on other TileViews. If your app does not depend on swipes over the grid, then I might move the touches functionality to the TileView to obstract more away from GridView. traverseGrid is the core method you will use to update tile states for some condition (e.g. when swiping, does tile frame contain swipe location?) or for applying a state to the entire grid, otherwise accessing the tile you need directly with grid[x][y] makes the most sense.
 
+- TileNode is the SKSpriteNode subclass equivalent to TileView.
+
+- GridNode is the SKSpriteNode subclass equivalent to GridView.
+
 - Tile is a struct that is meant to hold the properties that your application's logic would want to track. If this were for a game, a tile might have a property for its height on your map (e.g. forests are of height 1, mountains are of height 10 etc) to tie into your game's formula for unit movement. Or if you were strictly pathfinding, you might add a property just for risk. As far as a Tile's State goes, this is for tracking the possible states of your tile. Maybe it could be an obstacle, or a dynamic obstacle with some risk. Or even your goal tile. For now, tiles are strictly represented as active or new/inactive.
 
 - Constants.swift houses some of the main values you might want to edit (colors, possible tile states). One very important enum is Condition. You will pass in a Condition type into traverseGrid as well as a value that can be of any type and these together will allow you to use traverseGrid flexibly to do a variety of things (maybe you want to check if the tile has risk < 10 for your pathfinding, so you could create a Condition case for risk and then you could add another switch case within traverseGrid so that if your Condition is risk, you could pass in a value for risk and check the tile's risk against the unwrapped optional risk value passed into traverseGrid).
 
 # Usage 
-Drag and drop GridView.swift, TileView.swift, Coordinate.swift, Constants.swift and Tile.swift into your project OR
+###UIKit:
+Drag and drop GridView.swift, TileView.swift, Coordinate.swift, Constants.swift and Tile.swift into your project or
 add as a submodule (see: https://github.com/ggu/Pathfinder).
 
-And then wherever you need a grid (UIKit):
+And then wherever you need a grid:
 ```
 let gridView = GridView(size: gridSize)
 view.addSubview(gridView)
+```
+
+###SpriteKit:
+Drag and drop GridNode.swift, TileNode.swift, Coordinate.swift, Constants.swift and Tile.swift into your project or
+add as a submodule (see: https://github.com/ggu/Pathfinder).
+
+And then wherever you need a grid in your SKScene:
+```
+let gridNode = GridNode(size: gridSize)
+gridNode.position = CGPointZero
+gridNode.anchorPoint = CGPointZero
+addChild(gridNode)
 ```
 
 # Simple demo
@@ -29,5 +46,3 @@ The demo is not really representative of what this is meant to be used for, but 
 # To Do
 
 - support for panning around a grid larger than the screen 
-
-- complete support for SpriteKit
