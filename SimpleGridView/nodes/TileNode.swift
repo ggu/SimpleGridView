@@ -11,42 +11,35 @@ var SK_TILE_WIDTH = 40
 var SK_TILE_HEIGHT = 40
 var SK_TILE_MARGIN = 1
 
-internal class TileNode: SKSpriteNode
-{
+internal class TileNode: SKSpriteNode {
   private var tile : Tile
   
-  init(size: CGSize, position: CGPoint)
-  {
+  init(size: CGSize, position: CGPoint) {
     tile = Tile()
     super.init(texture: nil, color: Color.inactiveTile, size: size)
     self.anchorPoint = CGPointZero
     self.position = position
   }
   
-  func setActive()
-  {
+  func setActive() {
     self.color = Color.activeTile
     tile.setActive()
   }
   
-  func reset()
-  {
+  func reset() {
     self.color = Color.inactiveTile
     tile.reset()
   }
   
-  static func changeTileWidth(width: Int)
-  {
+  static func changeTileWidth(width: Int) {
     SK_TILE_WIDTH = width
   }
   
-  static func changeTileHeight(height: Int)
-  {
+  static func changeTileHeight(height: Int) {
     SK_TILE_HEIGHT = height
   }
   
-  static func changeTileMargin(margin: Int)
-  {
+  static func changeTileMargin(margin: Int) {
     SK_TILE_MARGIN = margin
   }
 

@@ -22,10 +22,8 @@ internal class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  private func setup()
-  {
+  private func setup() {
     gridView = GridView(size: view.frame.size)
     view.addSubview(gridView!)
   }
-  
 }

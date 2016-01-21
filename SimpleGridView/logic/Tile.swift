@@ -7,23 +7,19 @@
 
 import Foundation
 
-internal struct Tile
-{
-  enum State
-  {
+internal struct Tile {
+  enum State {
     case new
     case active
   }
   
   var state = State.new
   
-  mutating func setActive()
-  {
+  mutating func setActive() {
     state = .active
   }
   
-  mutating func reset()
-  {
+  mutating func reset() {
     state = .new
   }
 }

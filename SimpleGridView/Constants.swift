@@ -34,8 +34,7 @@ enum Color {
 
 // MARK: enum
 
-enum Condition
-{
+enum Condition {
   case location
   case setAll
 }

@@ -14,21 +14,18 @@ public class GridNode: SKSpriteNode
   
   // MARK: -
   
-  init(size: CGSize)
-  {
+  init(size: CGSize) {
     super.init(texture: nil, color: Color.margin, size: size)
     self.userInteractionEnabled = true
     setup()
   }
   
-  private func setup()
-  {
+  private func setup() {
     createGrid()
   }
   
   // MARK: - Grid Methods
-  private func createGrid()
-  {
+  private func createGrid() {
     //var xPos = 0
     //var yPos = 0
     var position = CGPointMake(0, 0)
@@ -37,11 +34,9 @@ public class GridNode: SKSpriteNode
     // TODO: Extra space
     // Currently adding 1 to guarantee that there is no blank space on edge of grid
     // instead, center grid with border over blank space and/or add support for larger grids and panning
-    for x in 0..<(Int(size.width)/(SK_TILE_WIDTH + SK_TILE_MARGIN) + 1)
-    {
+    for x in 0..<(Int(size.width)/(SK_TILE_WIDTH + SK_TILE_MARGIN) + 1) {
       grid.append([])
-      for _ in 0..<(Int(size.height)/(SK_TILE_HEIGHT + SK_TILE_MARGIN) + 1)
-      {
+      for _ in 0..<(Int(size.height)/(SK_TILE_HEIGHT + SK_TILE_MARGIN) + 1) {
         let tile = TileNode(size: tileSize, position: position)
         
         addChild(tile)
@@ -54,19 +49,14 @@ public class GridNode: SKSpriteNode
     }
   }
   
-  private func traverseGrid(state: Tile.State, condition: Condition, value: Any?)
-  {
-    for x in grid
-    {
-      for tile in x
-      {
-        switch condition
-        {
+  private func traverseGrid(state: Tile.State, condition: Condition, value: Any?) {
+    for x in grid {
+      for tile in x {
+        switch condition {
         case .setAll:
           toggleTileState(tile, state: state)
         case .location:
-          if let point = value as! CGPoint?
-          {
+          if let point = value as! CGPoint? {
             setTileIfPoint(tile, point: point, state: state)
           }
         }
@@ -75,10 +65,8 @@ public class GridNode: SKSpriteNode
   }
   
   // MARK: - Tile state methods
-  private func toggleTileState(tile: TileNode, state: Tile.State)
-  {
-    switch state
-    {
+  private func toggleTileState(tile: TileNode, state: Tile.State) {
+    switch state {
     case .new:
       tile.reset()
     case .active:
@@ -87,66 +75,52 @@ public class GridNode: SKSpriteNode
   }
   
   // MARK: - Touches methods
-  override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
-  {
-    if shouldResetGrid((event?.allTouches()?.count)!)
-    {
+  override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    if shouldResetGrid((event?.allTouches()?.count)!) {
       traverseGrid(Tile.State.new, condition: Condition.setAll, value: nil)
-    } else
-    {
-      for touch in touches
-      {
+    } else {
+      for touch in touches {
         let location = touch.locationInNode(self)
         setNodeIfTile(nodeAtPoint(location), state: Tile.State.new)
       }
     }
   }
   
-  override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?)
-  {
-    for touch in touches
-    {
+  override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    for touch in touches {
       let location = touch.locationInNode(self)
       traverseGrid(Tile.State.active, condition: Condition.location, value: location)
     }
   }
   
-  override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?)
-  {
+  override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
     
   }
   
-  override public func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?)
-  {
+  override public func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
     
   }
   
   // MARK: Helper methods
   
-  func setTileIfPoint(tile: TileNode, point: CGPoint, state: Tile.State)
-  {
-    if tile.containsPoint(point)
-    {
+  func setTileIfPoint(tile: TileNode, point: CGPoint, state: Tile.State) {
+    if tile.containsPoint(point) {
       toggleTileState(tile, state: state)
     }
   }
   
-  func setNodeIfTile(node: SKNode, state: Tile.State)
-  {
-    if isTileNode(node)
-    {
+  func setNodeIfTile(node: SKNode, state: Tile.State) {
+    if isTileNode(node) {
       let tile = node as! TileNode
       toggleTileState(tile, state: state)
     }
   }
   
-  func shouldResetGrid(count: Int) -> Bool
-  {
+  func shouldResetGrid(count: Int) -> Bool {
     return count > 1
   }
   
-  func isTileNode(node: SKNode) -> Bool
-  {
+  func isTileNode(node: SKNode) -> Bool {
     return node.isKindOfClass(TileNode)
   }
   

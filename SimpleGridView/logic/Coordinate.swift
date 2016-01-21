@@ -7,20 +7,17 @@
 
 import Foundation
 
-internal struct Coordinate
-{
+internal struct Coordinate {
   var x: Int
   var y: Int
   
   // Manhattan distance
-  func mDistance(coordinate: Coordinate) -> Int
-  {
+  func mDistance(coordinate: Coordinate) -> Int {
     return abs(x - coordinate.x) + abs(y - coordinate.y)
   }
   
   // Diagonal distance
-  func dDistance(coordinate: Coordinate) -> Int
-  {
+  func dDistance(coordinate: Coordinate) -> Int {
     return max(abs(x - coordinate.x), abs(y - coordinate.y))
   }
 }
