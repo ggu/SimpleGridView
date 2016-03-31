@@ -81,7 +81,7 @@ public class GridNode: SKSpriteNode
     } else {
       for touch in touches {
         let location = touch.locationInNode(self)
-        setNodeIfTile(nodeAtPoint(location), state: Tile.State.new)
+        setNodeIfTile(nodeAtPoint(location), state: Tile.State.active)
       }
     }
   }

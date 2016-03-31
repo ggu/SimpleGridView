@@ -99,7 +99,7 @@ public class GridView : UIView
     {
       for touch in touches
       {
-        setViewIfTile(touch.view!, state: Tile.State.new)
+        setViewIfTile(touch.view!, state: Tile.State.active)
       }
     }
   }
