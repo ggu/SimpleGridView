@@ -7,8 +7,7 @@
 
 import SpriteKit
 
-public class GridNode: SKSpriteNode
-{
+public class GridNode: SKSpriteNode {
   // MARK: - Fields
   private var grid: SKGrid = []
   
