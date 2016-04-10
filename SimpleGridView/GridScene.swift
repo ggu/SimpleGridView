@@ -9,11 +9,9 @@ import SpriteKit
 
 class GridScene: SKScene {
   
-  private var gridNode : GridNode?
-
+  private var gridNode = GridNode()
   
   internal override init(size: CGSize) {
-    
     super.init(size: size)
   }
   
@@ -22,17 +20,17 @@ class GridScene: SKScene {
   }
   
   private func setup() {
-    gridNode = GridNode(size: frame.size)
-    gridNode?.position = CGPointZero
-    gridNode?.anchorPoint = CGPointZero
-    addChild(gridNode!)
+    gridNode.position = CGPointZero
+    gridNode.anchorPoint = CGPointZero
+    gridNode.createGrid(size)
+    addChild(gridNode)
   }
   
   internal override func update(currentTime: CFTimeInterval) {
     
   }
   
-  internal required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+  internal required init?(coder aDecoder: NSCoder) {    
+    super.init(coder: aDecoder)
   }
 }

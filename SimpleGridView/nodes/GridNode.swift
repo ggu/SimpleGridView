@@ -13,10 +13,20 @@ public class GridNode: SKSpriteNode {
   
   // MARK: -
   
+  init() {
+    super.init(texture: nil, color: Color.margin, size: CGSizeZero)
+    self.userInteractionEnabled = true
+  }
+  
   init(size: CGSize) {
     super.init(texture: nil, color: Color.margin, size: size)
     self.userInteractionEnabled = true
     setup()
+  }
+  
+  internal func createGrid(size: CGSize) {
+    self.size = size
+    createGrid()
   }
   
   private func setup() {
@@ -102,28 +112,30 @@ public class GridNode: SKSpriteNode {
   
   // MARK: Helper methods
   
-  func setTileIfPoint(tile: TileNode, point: CGPoint, state: Tile.State) {
+  private func setTileIfPoint(tile: TileNode, point: CGPoint, state: Tile.State) {
     if tile.containsPoint(point) {
       toggleTileState(tile, state: state)
     }
   }
   
-  func setNodeIfTile(node: SKNode, state: Tile.State) {
+  private func setNodeIfTile(node: SKNode, state: Tile.State) {
     if isTileNode(node) {
       let tile = node as! TileNode
       toggleTileState(tile, state: state)
     }
   }
   
-  func shouldResetGrid(count: Int) -> Bool {
+  private func shouldResetGrid(count: Int) -> Bool {
     return count > 1
   }
   
-  func isTileNode(node: SKNode) -> Bool {
+  private func isTileNode(node: SKNode) -> Bool {
     return node.isKindOfClass(TileNode)
   }
   
   required public init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+    super.init(coder: aDecoder)
+    self.userInteractionEnabled = true
+    setup()
   }
 }
